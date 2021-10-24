@@ -26,7 +26,7 @@ main {
     height: 10px;
     width: 50px;;
     grid-column: 2/2;
-    zz-index: -1;
+
 
     background-color: whitesmoke;
     font-size: 15px;

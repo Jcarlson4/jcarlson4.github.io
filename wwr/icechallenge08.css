@@ -1,0 +1,57 @@
+.saved {
+    color: gray;
+    box-shadow: 5px 5px 10px;
+}
+
+.picture-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.check {
+    color: lightgreen;
+    font-size: 1000px;
+}
+
+button {
+    border-radius: 4px;
+    color: white;
+    background-color: lightskyblue;
+    border-style: 2px white;
+    
+}
+
+thumbs-up button {
+    color: blue;
+
+}
+
+.oops {
+    color: red;
+    font-size: 1000px;
+}
+
+.error h1 {
+    color: black;
+}
+
+.error p {
+    color: lightblue;
+}
+
+.error1 {
+    color: black;
+}
+
+.info {
+    color: lightblue;
+    font-size: 1000px;
+}
+
+#ok {
+    color: white;
+    background-color: blue;
+}

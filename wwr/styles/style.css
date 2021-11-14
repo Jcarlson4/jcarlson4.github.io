@@ -314,3 +314,8 @@ box-sizing: border-box;
         margin-top: 25px;
     }
 }
+
+.content2{
+    display: grid;
+    grid-template-columns: auto auto auto
+    

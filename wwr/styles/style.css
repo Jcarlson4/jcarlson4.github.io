@@ -317,5 +317,6 @@ box-sizing: border-box;
 
 .content2{
     display: grid;
-    grid-template-columns: auto auto auto
-    
+    grid-template-columns: auto auto auto;
+}
+

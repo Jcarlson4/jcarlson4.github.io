@@ -7,8 +7,104 @@ content{
     text-align: center;
 }
 
-home-grid {
+header{
+background-color: rgb(10, 10, 10);
+text-align: left;
+display: grid;
+grid-template-columns: 150px auto;
+}
+
+nav a{
+    text-align: center;
+    color: #284D67;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover{
+    background-color: whitesmoke;
+    color:black;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.home-grid {
     text-align: center;
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding: 50px;
+   
     
+}
+
+
+
+
+main {
+    background-color:#284D67 ;
+}
+
+header {
+    background-color: #E7C24F
+}
+
+
+.introimages{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.gcwbox {
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+
+.introduction{
+    grid-row: 2;
+    grid-column: 1/span 2;
+
+}
+
+
+.galactic-civil-war-introduction{
+    grid-row: 4;
+    grid-column: 1/span 2;  
+}
+
+.galactic-civil-war-header{
+    font-size: 100px;
+}
+
+.galactic-empire-introduction{
+    grid-row: 5;
+}
+
+.empire-text {
+    grid-row: 5;
+    grid-column: 2;
+    font-size: 50px;
+}
+
+.rebel-alliance-introduction{
+    grid-row: 6;
+}
+
+.clone-wars-introduction{
+    grid-row: 7;
+}
+
+.seperatist-alliance-introduction {
+    grid-row: 8;
+}
+
+.galactic-republic-introduction {
+    grid-row: 9;
 }

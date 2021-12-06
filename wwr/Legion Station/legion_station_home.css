@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&family=Zen+Antique+Soft&display=swap');
 
 content{
-    max-width: 1600px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
@@ -12,6 +12,7 @@ background-color: rgb(10, 10, 10);
 text-align: left;
 display: grid;
 grid-template-columns: 150px auto;
+width: auto;
 }
 
 nav a{
@@ -36,9 +37,11 @@ nav {
 .home-grid {
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1000px 1000px;
     gap: 50px;
     padding: 50px;
+    justify-items: center;
+    justify-content: center;
    
     
 }
@@ -55,14 +58,63 @@ header {
 }
 
 
+footer{
+
+    background-color: #E7C24f;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+footer h3{
+        color: black;
+        text-decoration: none;
+    
+    }
+    
+footer a{
+        color: gray;
+        text-decoration: none;
+}
+    
+footer a:hover{
+        color: indianred;
+}
+
+footer.socialimg{
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .introimages{
     grid-column: 1;
     grid-row: 1;
+
+
 }
+
+
 
 .gcwbox {
     grid-column: 2;
     grid-row: 1;
+
+    
 
 }
 
@@ -80,7 +132,7 @@ header {
 }
 
 .galactic-civil-war-header{
-    font-size: 100px;
+    font-size: 75px;
 }
 
 .galactic-empire-introduction{
@@ -90,21 +142,46 @@ header {
 .empire-text {
     grid-row: 5;
     grid-column: 2;
-    font-size: 50px;
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
 }
 
 .rebel-alliance-introduction{
     grid-row: 6;
 }
 
-.clone-wars-introduction{
-    grid-row: 7;
+.rebel-text{
+    grid-row: 6;
+    grid-column: 2;
+    font-size: 30px;
 }
 
+.clone-wars-introduction{
+    grid-row: 7;
+    grid-column: 1/span 2;  
+}
+
+.clone-wars-header{
+    font-size: 75px;
+}
 .seperatist-alliance-introduction {
     grid-row: 8;
+}
+
+.droid-text{
+    grid-row: 8;
+    grid-column: 2;
+    font-size: 30px;
 }
 
 .galactic-republic-introduction {
     grid-row: 9;
 }
+
+.clone-text{
+    grid-row: 9;
+    grid-column: 2;
+    font-size: 30px;
+}
+

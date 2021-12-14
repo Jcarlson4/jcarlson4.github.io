@@ -38,11 +38,11 @@ nav {
 .home-grid {
     text-align: center;
     display: grid;
-    grid-template-columns: 800px 800px;
     gap: 20px;
     padding: 50px;
     justify-items: center;
     justify-content: center;
+    color: white;
    
     
 }
@@ -66,7 +66,9 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    }
+    grid-row: 3;    
+}
+    
     
 footer h3{
         color: black;
@@ -86,85 +88,3 @@ footer a:hover{
 footer.socialimg{
     padding-top: 15px;
 }
-
-
-.container {
-    position: relative;
-    width: auto;
-
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-    
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: Lato;
-    
-  }
-
-  .image{
-    font-size: 20px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align:left;
-  }
-    
-
-.introimages{
-    grid-column: 1;
-    grid-row: 1;
-
-
-}
-
-.gcwbox {
-    grid-column: 2;
-    grid-row: 1;
-
-    
-
-}
-
-.introduction{
-    grid-row: 1;
-    grid-column: 1/span 2;
-    color: white;
-    font-family: Roboto;
-    font-size: 30px;
-
-}
-

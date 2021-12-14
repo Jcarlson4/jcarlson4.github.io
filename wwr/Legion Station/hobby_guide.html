@@ -5,58 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby Guide</title>
+    <link rel="stylesheet" href="hobby_guide.css">
+
 
     <style>
-        .container {
-          position: relative;
-          width: 50%;
+        form {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 1000px;
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
         }
-        
-        .image {
-          display: block;
-          width: 100%;
-          height: auto;
+
+        ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
         }
-        
-        .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
-          opacity: 0;
-          transition: .5s ease;
-          background-color: #008CBA;
+
+        form li + li {
+        margin-top: 1em;
         }
-        
-        .container:hover .overlay {
-          opacity: 1;
+
+        label {
+        /* Uniform size & alignment */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
         }
-        
-        .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          text-align: center;
+
+        input,
+        textarea {
+        /* To make sure that all text fields have the same font settings
+            By default, textareas have a monospace font */
+        font: 1em sans-serif;
+
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+
+        /* Match form field borders */
+        border: 1px solid #999;
         }
-        </style>
+
+        input:focus,
+        textarea:focus {
+        /* Additional highlight for focused elements */
+        border-color: #000;
+        }
+
+        textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+
+        /* Provide space to type some text */
+        height: 5em;
+        }
+
+        .button {
+        /* Align buttons with the text fields */
+        padding-left: 25px; /* same size as the label elements */
+        }
+
+        button {
+        /* This extra margin represent roughly the same space as the space
+            between the labels and their text fields */
+        margin-left: .5em;
+        width: 900px;
+        height: 75px;
+        }
+
+#feedback {
+    background-color: #0B161D;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+    </style>
 
 
 </head>
 <body>
-<main>
+
 
     <div class = "content">
+    <div id ="contactusform">    
         <header>
             <a id ="logo_link" href ="legion_station_index.html"> 
-                <img class="logo" src ="" alt = "Legion Station Logo">
+                <img class="logo" src ="images-legion/legionstation.png" alt = "Legion Station Logo" height="125" width="175">
         
             </a>
             
@@ -69,38 +114,144 @@
             </nav>
         
         </header>
+    </div>
+    </div>
+<main class = home-grid>
+    <div id="feedback">
+
+
 
     </div>
 
-    <div class = "intro">
 
-        <div class = introimages>
 
-            <img id = "vader" src="images-legion/darthv.jpg" alt = "Fear and Dead Men"> 
-            <img id = "luke" src="images-legion/lukes.jpg" alt = "Return of the Jedi"> 
-        </div>
+    <div class = "form">
+        <form action="my-handling-form-page" method="post">
+            <h1 class = "submition">Want to submit your paint jobs? Please fill out the Information below! </h1>
+            <ul>
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Submit your Name</button>
+                </li>
+            </ul>
         
-        <h1 class = introduction>
-            Star Wars Legion Hobby
-        </h1>
-
-        <p class = introduction-text>
-            Star Wars legion combines tactical gameplay with hobbying. This page is designed to show off the artistic touch of commanders of Star Wars legion.            
-        </p>
-
+        </form>
     </div>
 
+    
+    <div class = hobbyintro>
+    <h1 class = "introduction">
+        Star Wars Legion Hobby
+    </h1>
+
+    <p class = introduction-text>
+        Star Wars legion combines tactical gameplay with hobbying. This page is designed to show off the artistic touch of commanders of Star Wars legion.            
+    </p>
+    </div>
+    
+    <div class = "how-to">
     <h2>Content Painted by Players</h2>
-<p>Hover over the image to see the artist and name of unit.</p>
+    <p>Hover over the image to see the artist and name of unit.</p>
+    </div>
+    
+    <div class = "container">
 
-<div class="container">
-  <img src="images-legion/dewie.jpg" alt="Dewback by Joseph Carlson" class="image">
-  <div class="overlay">
-    <div class="text">Dewback by Joseph Carlson</div>
-  </div>
-</div>
+        <img id = "Dewback" src="images-legion/dewie.jpg" alt = "Dewback by Joseph Carlson" height="300" width="350">
+        <div class="overlay">
+            <div class="text"> Dewback by Joseph Carlson
+        </div>
+        </div>
+    
+    </div>
+    <div class="container">
+    <img src="images-legion/dylanvets.JPG" alt="Rebel Vetrans by Dylan Krupp" height="300" width="350">
+    <div class="overlay">
+        <div class="text">Rebel Vetrans by Dylan Krupp</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/sawyerarcs.JPG" alt="Arc Troopers by Sawyer Dalmer" height="300" width="350">
+    <div class="overlay">
+        <div class="text">Arc Troopers by Sawyer Dalmer</div>
+    </div>
+    </div>
+    
+    <div class="container">
+    <img src="images-legion/dylanluke.JPG" alt="Luke Skywalker by Dylan Krupp" height="300" width="350">
+    <div class="overlay">
+        <div class="text">Luke Skywalker by Dylan Krupp</div>
+    </div>
+    </div>
 
 
+    <div class="container">
+    <img src="images-legion/jrbus.jpg" alt="AA5 Speeder Truck by J.R Carlson" height="300" width="350">
+    <div class="overlay">
+        <div class="text">AA5 Speeder Truck by J.R Carlson</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/edwardb2s.jpg" alt="B2 Super Battle Droids by Edward Anderson" height="300" width="350">
+    <div class="overlay">
+        <div class="text">B2 Super Battle Droids by Edward Anderson</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/dylantroopers.JPG" alt="Rebel Troopers by Dylan Krupp" height="300" width="350">
+    <div class="overlay">
+        <div class="text">Rebel Troopers by Dylan Krupp</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/sawyeratrt.JPG" alt="ATRT by Sawyer Dalmer" height="300" width="350">
+    <div class="overlay">
+        <div class="text">ATRT by Sawyer Dalmer</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/jrfdcannon.jpg" alt="FD Laser Cannon by J.R Carlson" height="300" width="350">
+    <div class="overlay">
+        <div class="text">FD Laser Cannon by J.R Carlson</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/sawyerbarc.JPG" alt="BARC Speeder by Sawyer Dalmer" height="300" width="350">
+    <div class="overlay">
+        <div class="text">BARC Speeder by Sawyer Dalmer</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/edwardsaber.jpg" alt="Saber Tank by Edward Anderson" height="300" width="350">
+    <div class="overlay">
+        <div class="text">Saber Tank by Edward Anderson</div>
+    </div>
+    </div>
+
+    <div class="container">
+    <img src="images-legion/jrpathies.jpg" alt="Path Finders by J.R Carlson" height="300" width="350">
+    <div class="overlay">
+        <div class="text">Path Finders by J.R Carlson</div>
+    </div>
+    </div>
+    
 
 </main>
 
@@ -122,5 +273,23 @@
     </div>
 </footer>
 
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+
+    </script>
 </body>
 </html>

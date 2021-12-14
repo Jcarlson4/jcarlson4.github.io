@@ -38,7 +38,7 @@ nav {
 .home-grid {
     text-align: center;
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 400px 400px 400px 400px ;
     gap: 50px;
     padding: 50px;
     justify-items: center;
@@ -46,12 +46,15 @@ nav {
     color: white;
     font-size: 25px;
     font-family: Lato;
+
+    
     
     
 }
 
 main {
     background-color:#0B161D ;
+
 }
 
 header {
@@ -90,11 +93,11 @@ footer.socialimg{
 
 .container {
     position: relative;
-    width: 100%;
+    width: auto;
   }
   
   .image {
-    display: block;
+    display:block;
     width: 100%;
     height: auto;
   }
@@ -118,7 +121,7 @@ footer.socialimg{
   
   .text {
     color: white;
-    font-size: 20px;
+    font-size: 35px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,7 +133,7 @@ footer.socialimg{
   }
 
   .image{
-    font-size: 20px;
+    font-size: 50px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -138,53 +141,42 @@ footer.socialimg{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align:left;
+    }
+
+    
+.vader{
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 350px;
+
 }
     
+.luke{
+    grid-column: 3;
+    margin-left: 350px;
+}
 
-    
-    
-    
-    .introimages{
-        width: 100%;
-        border:white solid
-    }
+.hobbyintro{
+    grid-column: 1/span 4;
+}
 
-    .introduction {
-        color: white;
-        font-family: Lato;
-    }
+.how-to{
+    grid-column: 1/span 4; 
+}
 
-  
-    .saber-text-introduction{
-        text-align: left;
-        font-family: Roboto;
-    }
+.form{
+    grid-column: 1/span 4;
+    grid-row: 8;
+}
 
-    .saber-list1{
-        padding: 50px;
-    }
+.submition{
+    text-align: center;
+}
 
-    .saber-tank-list-description{
-        text-align: left;
-    }
-
-    .saber-tank-list-description-2{
-        text-align: left;
-    }
-
-    .chad-card-image{
-        padding: 100px;
-    }
-
-    .chad-bane-card-description{
-        text-align: left;
-        width: 1276px;
-    }
-
-    .i-make-the-rules-now-description{
-        text-align: left;
-    }
-
+.responsive {
+    width: 100%;
+    height: auto;
+  }
 
 
    
